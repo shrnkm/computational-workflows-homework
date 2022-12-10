@@ -83,6 +83,11 @@ RUN apt-get -y update && \
 
 ```
 # Add your commands here
+
+vim Dockerfile
+git add .
+git commit -m 'add Dockerfile'
+git push
 ```
 
 ## Build and push Docker image
