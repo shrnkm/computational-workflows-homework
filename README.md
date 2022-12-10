@@ -84,10 +84,10 @@ RUN apt-get -y update && \
 ```
 # Add your commands here
 
-vim Dockerfile
-git add .
-git commit -m 'add Dockerfile'
-git push
+$ vim Dockerfile # it works without first running 'touch'
+$ git add .
+$ git commit -m 'add Dockerfile'
+$ git push
 ```
 
 ## Build and push Docker image
@@ -98,6 +98,11 @@ git push
 
 ```
 # Add your commands here
+
+$ docker build . # did not work first, so I changed the ubuntu version to 22:04
+# then I did not get any message like 
+$ docker login
+
 ```
 
 ## Run a container, and share in files from the host.
