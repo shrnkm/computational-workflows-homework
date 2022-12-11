@@ -82,9 +82,9 @@ RUN apt-get -y update && \
 2. `git add` and `git push` the file `Dockerfile` to the repository.
 
 ```
-# Add your commands here
+# MY COMMENTs
 
-$ vim Dockerfile # it works without first running 'touch'
+$ vim Dockerfile [it works without first running 'touch']
 $ git add .
 $ git commit -m 'add Dockerfile'
 $ git push
@@ -97,11 +97,14 @@ $ git push
    `<yourdockerhubusername>/computational-workflows`.
 
 ```
-# Add your commands here
+# MY COMMENTs
 
-$ docker build . # did not work first, so I changed the ubuntu version to 22:04
-# then I did not get any message like 
-$ docker login
+$ docker build .   [did not work first, so i changed the ubuntu version to 22:04]
+$ docker login     [should i add localhost]
+$ docker image ls  [so i can get the image ID]
+$ docker image tag 4fe7e9941d98 shrnkm/computational-workflows [no idea what I'm doing here, especially that I can add version, as well]
+$ docker image push shrnkm/computational-workflows
+
 
 ```
 
