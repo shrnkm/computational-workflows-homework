@@ -102,10 +102,8 @@ $ git push
 $ docker build .   [did not work first, so i changed the ubuntu version to 22:04]
 $ docker login     [should i add localhost]
 $ docker image ls  [so i can get the image ID]
-$ docker image tag 4fe7e9941d98 shrnkm/computational-workflows [no idea what I'm doing here, especially that I can add version, as well]
+$ docker image tag 4fe7e9941d98 shrnkm/computational-workflows [no idea what I'm doing here]
 $ docker image push shrnkm/computational-workflows
-
-
 ```
 
 ## Run a container, and share in files from the host.
