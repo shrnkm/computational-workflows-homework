@@ -103,7 +103,7 @@ $ docker build .   [did not work first, so i changed the ubuntu version to 22:04
 $ docker login     ['cause i am already logged in with Docker Desktop]
 $ docker image ls  [so i can get the image ID]
 $ docker image tag 4fe7e9941d98 shrnkm/computational-workflows-homework [no idea what I'm doing here]
-$ docker image push shrnkm/computational-workflows-homework 
+$ docker image push shrnkm/computational-workflows-homework
 ```
 
 ## Run a container, and share in files from the host.
@@ -115,7 +115,13 @@ $ docker image push shrnkm/computational-workflows-homework
 ```
 # MY COMMENTs
 
-$ docker run shrnkm/computational-workflows-homework
+$ docker run -ti shrnkm/computational-workflows-homework
+root@48f405a267ae:/# mkdir /root/shared
+root@48f405a267ae:/# exit
+[i was learning and i decided to putting everything in command for a later time,
+so first i created the 'shared' folder, and checked to make sure it is there,
+and then exited and did the share thing]
+$ docker run -ti -v $(pwd):/root/shared/ shrnkm/computational-workflows-homework
 ```
 
 ## Setup a simple Python test suite
@@ -126,7 +132,13 @@ $ docker run shrnkm/computational-workflows-homework
    repository.  ``git add``, ``git commit`` and ``git push`` them.
 
 ```
-# Add your commands here
+# MY COMMENTs
+
+$ git clone https://github.com/jhale/computational-workflows-homework.git
+$ cd computational-workflows-homework/
+$ cp ./computational-workflows-homework/wallet.py ./Workplace/computational-workflows-homework/
+$ cp ./computational-workflows-homework/test_wallet.py ./Workplace/computational-workflows-homework/
+
 ```
 
 2. Start a Docker container using your image and share your repository into a
