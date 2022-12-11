@@ -115,7 +115,7 @@ $ docker image push shrnkm/computational-workflows
 ```
 # MY COMMENTs
 
-$ docker run shrnkm/computational-workflows
+$ docker run shrnkm/computational-workflows-homework
 ```
 
 ## Setup a simple Python test suite
