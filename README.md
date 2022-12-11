@@ -138,6 +138,9 @@ $ git clone https://github.com/jhale/computational-workflows-homework.git
 $ cd computational-workflows-homework/
 $ cp ./computational-workflows-homework/wallet.py ./Workplace/computational-workflows-homework/
 $ cp ./computational-workflows-homework/test_wallet.py ./Workplace/computational-workflows-homework/
+$ git add .
+$ git commit -m 'add py files'
+$ git push
 
 ```
 
