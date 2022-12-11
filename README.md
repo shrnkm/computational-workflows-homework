@@ -100,10 +100,10 @@ $ git push
 # MY COMMENTs
 
 $ docker build .   [did not work first, so i changed the ubuntu version to 22:04]
-$ docker login     [should i add localhost]
+$ docker login     ['cause i am already logged in with Docker Desktop]
 $ docker image ls  [so i can get the image ID]
-$ docker image tag 4fe7e9941d98 shrnkm/computational-workflows [no idea what I'm doing here]
-$ docker image push shrnkm/computational-workflows
+$ docker image tag 4fe7e9941d98 shrnkm/computational-workflows-homework [no idea what I'm doing here]
+$ docker image push shrnkm/computational-workflows-homework 
 ```
 
 ## Run a container, and share in files from the host.
