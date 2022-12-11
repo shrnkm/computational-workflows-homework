@@ -113,7 +113,9 @@ $ docker image push shrnkm/computational-workflows
    an interactive prompt inside the running container.
 
 ```
-# Add your commands here
+# MY COMMENTs
+
+$ docker run shrnkm/computational-workflows
 ```
 
 ## Setup a simple Python test suite
