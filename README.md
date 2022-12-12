@@ -115,13 +115,7 @@ $ docker image push shrnkm/computational-workflows-homework
 ```
 # MY COMMENTs
 
-$ docker run -ti shrnkm/computational-workflows-homework
-root@48f405a267ae:/# mkdir /root/shared
-root@48f405a267ae:/# exit
-[i was learning and i decided to putting everything in command for a later time,
-so first i created the 'shared' folder, and checked to make sure it is there,
-and then exited and did the share thing]
-$ docker run -ti -v $(pwd):/root/shared/ shrnkm/computational-workflows-homework
+$ docker run -ti -v $(pwd):/root/shared shrnkm/computational-workflows-homework
 ```
 
 ## Setup a simple Python test suite
@@ -141,14 +135,15 @@ $ cp ./computational-workflows-homework/test_wallet.py ./Workplace/computational
 $ git add .
 $ git commit -m 'add py files'
 $ git push
-
 ```
 
 2. Start a Docker container using your image and share your repository into a
    directory `/root/shared` into the container.
 
 ```
-# Add your commands here
+# MY COMMENTs
+
+# copy repository in the shared folder
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
