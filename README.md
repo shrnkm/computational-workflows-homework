@@ -143,7 +143,12 @@ $ git push
 ```
 # MY COMMENTs
 
-# copy repository in the shared folder
+[So, I'm not sure if I did not get this part of the task or the previous one,
+'cause what I did for the part "## Run a container, and share in files from the host."
+is doing the same thing that asked here: the following command share my repo in the
+/root/shared directory on the container. So, if I add a file locally to my repo,
+I can see it on the container, as well]
+$ docker run -ti -v $(pwd):/root/shared shrnkm/computational-workflows-homework
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
