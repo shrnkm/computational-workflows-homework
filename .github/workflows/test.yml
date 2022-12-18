@@ -1,0 +1,9 @@
+name: Wallet
+on: [push] #?
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+    container: shrnkm/computational-workflows-homework
+
+    steps:
+      # no idea
