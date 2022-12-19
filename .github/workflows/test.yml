@@ -1,9 +1,14 @@
 name: Wallet
-on: [push] #?
+on:
 jobs:
   tests:
     runs-on: ubuntu-22.04
     container: shrnkm/computational-workflows-homework
 
     steps:
-      # no idea 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          python3 -m pytest
