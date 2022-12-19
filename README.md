@@ -167,3 +167,12 @@ $ docker run -ti -v $(pwd):/root/shared shrnkm/computational-workflows-homework
 
 3. Push the `.github/workflows/test.yml` file to GitHub. Check that you get the
    green tick showing that your tests pass.
+   
+```
+# MY COMMENTs
+
+So, now yml file is working and I got a green tick.
+However, I just copy-pasted the template from your repo.
+I really really really want to learn more and get skilled with these stuff.
+Could you please offer another course on Computational Workflows? A bit longer?
+```
